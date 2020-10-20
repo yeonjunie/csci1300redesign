@@ -2,13 +2,94 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="home-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <h1>Responsive Redesign</h1>
+    <p>One of my favorite places to eat around Brown's campus is 
+      <a href="https://www.chongqinghouseri.com/"><b style="font-size:20px;color:darkred;">Chong Qing House</b></a>. I've used their 
+      website amid the Covid outbreak and thought it would be meaningful to evaluate and redesign 
+      their online platform as their old customer. 
+    </p>
+    <h2>
+      Identifying Usability Problems
+    </h2>
+    <p>Upon revisiting their website, I was able to pinpoint some usability issues that I've learned from class.</p>
+    <img src="website.png"/>
+    <ol>
+      <li>Header of website is too <b>lengthy</b></li>
+      <li>The Categories tab is <b>repetitive</b>, “Menu” tab exists</li>
+      <li>Having today’s date doesn’t seem necessary</li>
+      <li>Restaurant description is <b>misleading</b> and is not up to date</li>
+      <li>Search menu can be in the <b>navigation bar</b></li>
+      <li><b>Order</b> of the tabs on the navigation bar isn’t coherent</li>
+      <li><b>Duplicate</b> navigation bar in the footer</li>
+      <li>Could mention these are notices regarding Covid response</li>
+    </ol>
+    <h2>
+      Evaluating for Accessibility
+    </h2>
+    <img src="accessibility.png"/>
+    <p>As shown in the WebAIM WAVE analysis, the website <b style="color:red">accounts for most accessibility issues</b> and uses proper navigation and 
+      elements to structure the page. This allows the screen reader to read the contents 
+      of the webpage <b style="color:red">from top to bottom in coherent order</b>. There are a 
+      <b style="color:red">couple of alerts</b> as shown in the evaluation tool such as redundant links, 
+      redundant title texts, and small text sizes.
+    </p>
+    <h2>
+      Low-fidelity Wireframe
+    </h2>
+    <p>
+      Combining all the problems I've identified above, I put together a low-fidelity wireframe of its main home page in three different layouts using Balsamiq.
+    </p>
+    <p><b>I. Mobile</b></p>
+    <img src="low1.png"/>
+    <p><b>II. Tablet</b></p>
+    <img src="low2.png"/> 
+    <p><b>III. Desktop</b></p>
+    <img src="low3.png"/>
+    <h2>
+      High-fidelity Prototype
+    </h2>
+    <p>
+      Afterwards, utilizing the wireframes as a guide, I put together a high-fidelity prototype via Figma.
+    </p>
+    <p><b>I. Mobile</b></p>
+    <img src="phone.png"/>
+    <p><b>II. Tablet</b></p>
+    <img src="ipad.png"/>
+    <p><b>III. Desktop</b></p>
+    <img src="web1.png"/>
+    <img src="web2.png"/>
+    <h2>
+      Visual Design Style Guide
+    </h2>
+    <p>
+      Here's a visual representation of all the interactive components in the website:
+    </p>
+    <img src="visual.png"/>
+    <h2>
+      Responsive Redesign
+    </h2>
+    <p>
+      The redesigned version of the website is responsive in the following ways:
+    </p>
+    <ol>
+      <li>Screen is responsive with the size of browser</li>
+      <li>Text alters between "open" and "close" based on business hours in real time</li>
+      <li>Navigation bar shrinks when the window is minimized, replaces with hamburger menu</li>
+      <li>Dropdown menu when user toggles the hamburger icon</li>
+      <li>Hovering over clickable text, icons, and buttons change color</li>
+    </ol>
+    <a href="redesign.html" ><b style="text-align:center; font-size:20px;color:red;">Check out the redesigned version of the website here!</b></a>
+    <p>
+      After testing the website on various accessibility and responsive tools, I learned that it is important to 
+      be careful and deliberate with html tags and their labels. Nowadays, people access websites using various devices,
+      thus it was very meaningful to experiment different sizes and layout to ensure that the website is accessibly across all dimensions.
+    </p><br><br><br>
   </body>
 </html>

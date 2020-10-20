@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Chong Qing House</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6adf03c2df.js" crossorigin="anonymous"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  
+  <body>
+    <div class="header">
+      <img src="background.png" class="background">
+      <p class="open" id="openclose"></p>
+      <p class="time">11AM-10PM</p>
+      <p class ="title">CHONG QING HOUSE</p>
+      <button class="btn order">order online</button>
+      <i class="fas fa-shopping-cart cart fa-lg"></i>
+      <i class="fas fa-search search fa-lg" ></i>
+      <div class="navbar" id="navbar">
+        <a href="#login">login</a>
+        <a href="#delivery">delivery</a>
+        <a href="#menu">menu</a>
+        <a href="#home" style="color: #BC271B">home</a>
+        <a class="hamburger">
+          <i class="fa fa-bars fa-2x" style="color:#FFFFFF"></i>
+        </a>
+      </div>
+      <div class="dropdown-menu">
+        <i class="fa fa-bars fa-2x dropbtn" style="color:#FFFFFF"></i>
+        <div class="tabs">
+          <a href="#login">login</a>
+          <a href="#delivery">delivery</a>
+          <a href="#menu">menu</a>
+        </div>
+      </div>
+      
+    </div>
+    <p class="description"> 
+      Chong Qing House offers authentic and delicious tasting Chinese cuisine in East Providence, RI. 
+      Restaurant’s convenient location and affordable prices make our restaurant a natual choice for 
+      dine-in, take-outmeals in the East Providence community. Our restaurant is known for its variety 
+      of taste and authenticity. Come and experience our friendly atmosphere and excellent service.
+    </p>
+    <h2> COVID-19 NOTICE</h2>
+    <p class="notice"> 
+      We moved to <b>East Providence, RI</b>. Please check our new address below. May we politely 
+      request all customers to place your order via online. We encourage all customers to order 
+      pickup as there will be fee added on delivery.
+    </p>
+    <h2> CONTACT US</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <p class="contact-us">
+          Come visit us at <b>188 Taunton Ave, East Providence, RI 02914.</b> Feel free to reach us at (401)272 2049.
+        </p>
+      </div> 
+      <div class="grid-item"><img src="logo.png" class="logo"/></div>
+    </div>
+    <div class="footer">
+      <p>PRIVACY POLICY</p>
+      <p>ACCESSIBILITY</p>
+      <p>TERMS OF SERVICE</p>
+    </div>
+  <script>
+    var d = new Date();
+    var hr = d.getHours();
+    if (hr >= 11 && hr <= 21) {
+      document.getElementById("openclose").innerHTML = "open";
+    } else {
+      document.getElementById("openclose").innerHTML = "closed";
+    }
+  </script>
+  </body>
+</html>
